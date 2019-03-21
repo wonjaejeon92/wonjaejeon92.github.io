@@ -1,0 +1,104 @@
+<!DOCTYPE html> <!--시간표.html-->
+<html lang="ko">
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<style type="text/css">table, tr, th, td {
+		border:1px solid black;
+		border-collapse:collapse;
+		
+	}
+		.cap{background-color: red;}
+		.net{background-color: yellow;}
+		.inp{background-color: blue;}
+		.mob{background-color: green;}
+		.sys{background-color: purple;}
+		.men{background-color: orange;}
+	</style>
+	<title>HTML5 테이블 스팬 실습</title>
+</head>
+<body>
+	<table>
+	<tr>
+		<th></th>
+		<th>월</th>
+		<th>화</th>
+		<th>수</th>
+		<th>목</th>
+		<th>금</th>
+	</tr>
+	<tr>
+		<td>1교시</td>
+		<td></td>
+		<td></td>
+		<td rowspan="2" class="net">네트워크<br/>프로그래밍</td>
+		<td></td>
+		<td></td>		
+	</tr>
+	<tr>
+		<td>2교시</td>
+		<td></td>
+		<td></td>
+		
+		<td rowspan="2" class="inp">인터넷<br/>프로그래밍</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>3교시</td>
+		<td></td>
+		<td></td>
+		<td></td>
+
+		<td rowspan="2" class="cap">캡스톤<br/>디자인</td>
+	</tr>
+	<tr>
+		<td>4교시</td>
+		<td></td>
+		<td></td>
+		<td rowspan="2" class="mob">모바일<br/>프로그래밍</td>
+		<td></td>
+		
+	</tr>
+	<tr>
+		<td>5교시</td>
+		<td></td>
+		<td rowspan="2" class="net">네트워크<br/>프로그래밍</td>
+		
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>6교시</td>
+		<td class="cap">캡스톤<br/>디자인</td>
+		
+		<td rowspan="2" class="sys">시스템 분석<br/>및 설계</td>
+		<td></td>
+		<td class="mob">모바일<br/>프로그래밍</td>
+	</tr>
+	<tr>
+		<td>7교시</td>
+		<td></td>
+		<td></td>
+		
+		<td rowspan="2" class="men">캠퍼스<br/>멘토링</td>
+		<td class="sys">시스템 분석<br/>및 설계</td>
+	</tr>
+	<tr>
+		<td>8교시</td>
+		<td></td>
+		<td></td>
+		<td rowspan="2" class="inp">인터넷<br/>프로그래밍</td>
+		
+		<td></td>
+	</tr>
+	<tr>
+		<td>9교시</td>
+		<td></td>
+		<td></td>
+		
+		<td></td>
+		<td></td>
+	</tr>
+	</table>
+</body>
+</html>
