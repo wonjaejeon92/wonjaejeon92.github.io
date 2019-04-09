@@ -5,12 +5,40 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1"/>
 	<style> 
 		body{font-size: 130%;}
-       		.bg{background: linear-gradient(0.25turn,#ebf8e1,  #7bbce7);}    
+       		ul{
+			list-style-type: none;
+			
+			margin: 0;
+			padding: 0;
+			width: 15%;
+			height: 100;;
+			background-color: #f1f1f1;
+			position: fixed;
+			overflow: auto;
+		} 
+		li a{
+			display: block;
+			color: #000;
+			padding: 8px 16px;
+			text-decoration: none;
+		}
+		
+		li a:hover:not(.active){
+			background-color: #555;
+			color: white;
+		}  
    	</style>
 	<title>포트폴리오</title>
 </head>
 <body>
-	<div class="bg">
+	<ul>
+		<li><a href="#1week">1주차</a></li>
+		<li><a href="#2week">2주차</a></li>
+		<li><a href="#3week">3주차</a></li>
+		<li><a href="#4week">4주차</a></li>
+		<li><a href="#5week">5주차</a></li>
+	</ul>
+    <div style="margin-left:16%; padding:1px 16px; height:1000px;">
 	<h2>전원재</h2>
 	<hr>
     	<ol> <h3 id="1week">1주차</h3>
