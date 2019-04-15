@@ -1,0 +1,115 @@
+
+<!doctype html>
+<html><head><meta charset=“utf-8”/>
+<meta name=“viewport” content="width=device-width, initial-scale=1"/>
+<style>
+    #select{width: max-content;}
+    #bt{width: max-content;}
+</style>
+<title> 모니터 </title>
+</head>
+<body>
+<section>
+<form action="../menu.jsp" method="post">
+<fieldset id="select">
+<legend>모니터 검색</legend>
+	<label for="brand">브랜드</label>
+	<select id="brand" name="mbrand">
+		<option value="선택하세요" selected>선택하세요</option>
+		<option value="Samsung">Samsung전자</option>
+        <option value="LG">LG전자</option>
+        <option value="알파스캔">알파스캔</option>
+        <option value="TG삼보">TG삼보</option>
+        <option value="BenQ">BenQ</option>
+        <option value="한성컴퓨터">한성컴퓨터</option>
+        <option value="HP">HP</option>
+	</select>
+	<label for="size">화면크기</label>
+	<select id="size" name="msize">
+        <option value="선택하세요" selected>선택하세요</option>
+		<option value="21">53cm(21인치)</option>
+		<option value="24">61cm(24인치)</option>
+		<option value="27">68cm(27인치)</option>
+        <option value="32">81cm(32인치)</option>
+        <option value="34">86cm(34인치)</option>
+        <option value="43">109cm(43인치)</option>        
+    </select>
+    <label for="rate">화면비율</label>
+	<select id="rate" name="mrate">
+        <option value="선택하세요" selected>선택하세요</option>
+		<option value="43">4:3</option>
+		<option value="54">5:4</option>
+		<option value="169">16:9</option>
+        <option value="219">21:9</option>
+        <option value="329">32:9</option>        
+    </select>
+    <label for="resolution">해상도</label>
+	<select id="resolution" name="mresolution">
+        <option value="선택하세요" selected>선택하세요</option>
+		<option value="1280">1280*800</option>
+		<option value="1210">1280*1024</option>
+		<option value="1376">1360*768</option>
+        <option value="1910">1920*1080</option>
+        <option value="2514">2560*1440</option>
+        <option value="3414">3440*1440</option>
+        <option value="3821">3840*2160</option>        
+	</select><br/>
+    <label for="pannel">패널종류</label>
+	<select id="pannel" name="mpannel">
+		<option value="선택하세요" selected>선택하세요</option>
+		<option value="IPS">IPS</option>
+        <option value="VA">VA</option>
+        <option value="TN">TN</option>
+        <option value="PLS">PLS</option>
+        <option value="AHVA">AHVA</option>
+    </select>
+    <label for="input">영상입력단자</label>
+	<select id="input" name="minput">
+		<option value="선택하세요" selected>선택하세요</option>
+		<option value="HDMI">HDMI</option>
+        <option value="HDMI2">HDMI 2.0</option>
+        <option value="DVI">DVI</option>
+        <option value="DP">DP포트</option>
+    </select>
+    <label for="sight">시력보호기능</label>
+	<select id="sight" name="msight">
+		<option value="선택하세요" selected>선택하세요</option>
+		<option value="flicker">플리커 프리</option>
+        <option value="blue">블루라이트 차단</option>
+        <option value="bright">눈부심 방지</option>
+    </select><br/>
+    <label for="response">응답속도</label>
+	<select id="response" name="mresponse">
+		<option value="선택하세요" selected>선택하세요</option>
+		<option value="4">0~4ms</option>
+        <option value="8">5~8ms</option>
+        <option value="12">9~12ms</option>
+        <option value="16">13~16ms</option>
+        <option value="20">17~20ms</option>
+    </select>
+    <label for="hz">주사율</label>
+	<select id="hz" name="mhz">
+		<option value="선택하세요" selected>선택하세요</option>
+		<option value="60">60hz</option>
+        <option value="72">72hz</option>
+        <option value="75">75hz</option>
+        <option value="100">100hz</option>
+        <option value="120">120hz</option>
+    </select>
+    <label for="kg">무게</label>
+	<select id="kg" name="mkg">
+		<option value="선택하세요" selected>선택하세요</option>
+		<option value="3">3kg 이하</option>
+        <option value="4">3~4kg</option>
+        <option value="5">4~5kg</option>
+        <option value="6">5~6kg</option>
+        <option value="7">6kg 이상</option>
+	</select>
+</fieldset>
+<fieldset id="bt">
+    <button type="submit"> 찾기 </button>
+    <button type="reset"> 취소 </button>
+</fieldset>
+</form>
+</section>
+</body></html>
