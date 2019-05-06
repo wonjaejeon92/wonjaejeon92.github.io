@@ -1,1 +1,2 @@
-body{background-image: url("../Images/sky.jpg");}
+body{background-image: url("../Images/sky.jpg"); background-repeat: no-repeat;
+    background-position: center; background-size: cover;}
