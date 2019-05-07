@@ -1,4 +1,57 @@
-html{
-    background: url("../Images/desk.PNG") no-repeat center center fixed;
-    background-size: cover;
-    }
+        body{
+            background: url("../Images/desk.PNG") no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+            padding: 5px;
+            }
+        h1 {
+            margin: 100px;
+            padding: 50px;
+            text-align: center;
+            color: white;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        body:before{
+            content:'';
+            height:100%;
+             display:inline-block;
+             vertical-align:middle;
+        }
+        button{
+            background:#000000;
+             color:#fff;
+             border:none;
+             position:relative;
+             height:60px;
+             width: 150px;
+             font-size:1em;
+             padding:0 2em;
+             cursor:pointer;
+             transition:800ms ease all;
+             outline:none;
+             font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        button:hover{
+            background:#fff;
+             color:#000000;
+        }
+        button:before,button:after{
+            content:'';
+            position:absolute;
+            top:0;
+            right:0;
+            height:2px;
+            width:0;
+            background: #757575;
+            transition:400ms ease all;
+        }
+        button:after{
+            right:inherit;
+            top:inherit;
+            left:0;
+            bottom:0;
+        }
+        button:hover:before,button:hover:after{
+            width:100%;
+            transition:800ms ease all;
+        }
