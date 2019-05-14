@@ -7,6 +7,116 @@
         h1 {
             margin: 100px;
             padding: 50px;
+        body{
+            background-color: #757575;
+        }
+        #first {
+            margin: 100px;
+            padding: 50px;
+            text-align: center;
+            color: white;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        h1{
+            text-align: center;
+            color: #000000;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font: bold;
+        }
+        .main{
+            background-image: url("../포폴/desk.PNG");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color: white;
+            height: 100%;
+            
+            
+        }
+        .skill{
+            margin: 100px;
+            
+        }
+        .work{
+            margin: 150px;
+            color: dimgrey;
+            
+        
+        }
+        
+        body:before{
+            content:'';
+            height:100%;
+             display:inline-block;
+             vertical-align:middle;
+        }
+        button{
+            background:#000000;
+             color:#fff;
+             border:none;
+             position:relative;
+             height:60px;
+             width: 150px;
+             font-size:1em;
+             padding:0 2em;
+             cursor:pointer;
+             transition:800ms ease all;
+             outline:none;
+             font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        button:hover{
+            background:#fff;
+             color:#000000;
+        }
+        button:before,button:after{
+            content:'';
+            position:absolute;
+            top:0;
+            right:0;
+            height:2px;
+            width:0;
+            background: #757575;
+            transition:400ms ease all;
+        }
+        button:after{
+            right:inherit;
+            top:inherit;
+            left:0;
+            bottom:0;
+        }
+        button:hover:before,button:hover:after{
+            width:100%;
+            transition:800ms ease all;
+        }
+        a:hover{           
+            color: #000000;
+            text-decoration: none;
+        }
+        a:visited{
+            color: #fff;
+        }
+        a:active{
+            text-decoration: none;
+        }
+        a:link{
+            color: #757575;
+        }        
+        
+        dt{
+            font-size: 30px;
+            margin-left: 10px;
+        }
+        dd{
+            font-size: 15px;
+            margin-left: 10px;
+        }
+        .gr{
+            margin-left: 40px;
+        }
+        .p{
+            color: cadetblue;
+        }
+
             text-align: center;
             color: white;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
