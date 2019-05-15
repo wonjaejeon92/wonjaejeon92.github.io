@@ -10,6 +10,18 @@
             text-align: center;
             color: white;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
+            animation: text 3s 1;
+        }
+         @keyframes text{
+            0%{
+                color: black;
+            }
+            30%{
+                letter-spacing: 25px;
+            }
+            85%{
+                letter-spacing: 3px;
+            }
         }
         h1{
             text-align: center;
