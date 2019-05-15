@@ -35,13 +35,10 @@ $(document).ready(function(){
     }
 
     $('html,body').animate({scrollTop : offset.top }, 2000);
- 
- 
+
  }
 
 });
-
-
 
 window.onscroll = function() {scrollFunction()};
 
@@ -53,10 +50,7 @@ function scrollFunction() {
   }
 }
 
-
 function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0; 
 }
-
-
