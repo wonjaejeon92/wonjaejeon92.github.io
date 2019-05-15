@@ -12,7 +12,7 @@
             font-family: Verdana, Geneva, Tahoma, sans-serif;
             animation: text 3s 1;
         }
-         @keyframes text{
+        @keyframes text{
             0%{
                 color: black;
             }
@@ -29,6 +29,7 @@
             font-family: Verdana, Geneva, Tahoma, sans-serif;
             font: bold;
         }
+       
         .main{           
             background: url(../Images/desk.PNG) no-repeat center center fixed; 
             background-size: cover;
@@ -43,6 +44,12 @@
         .work{
             padding: 150px;
             color: dimgrey;
+        }
+        .contact{
+            margin: 50px;
+            padding: 50px;
+            text-align: center;
+
         }
         
         body:before{
@@ -135,7 +142,7 @@
           #myBtn:hover {
             background-color: #555; 
           }
-        .progress-bar {
+          .progress-bar {
             width: 0;
             animation: progress 1.5s ease-in-out forwards;
           }
@@ -161,4 +168,3 @@
               opacity: 1;
             }
           }
-        
