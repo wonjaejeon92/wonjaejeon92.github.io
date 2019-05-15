@@ -22,8 +22,11 @@
             background-size: cover;
         }
         .skill{
-            margin: 250px;
-            padding-bottom: 70px;
+            background-image: url(../Images/tex.png);
+            background-size: cover;
+            position: relative; 
+            padding: 10%;
+            padding-bottom: 150px;
         }
         .work{
             padding: 150px;
