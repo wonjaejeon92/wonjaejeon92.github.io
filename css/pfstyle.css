@@ -1,10 +1,12 @@
 
         body{
-            background-color: #757575;
+            background-color: gainsboro;
         }
         #first {
             margin: 100px;
             padding: 50px;
+            padding-bottom: 600px;
+            font-size: 50px;
             text-align: center;
             color: white;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -15,29 +17,20 @@
             font-family: Verdana, Geneva, Tahoma, sans-serif;
             font: bold;
         }
-        .main{
-            background-image: url("../Images/desk.PNG");
+        .main{           
+            background: url(../Images/desk.PNG) no-repeat center center fixed; 
             background-size: cover;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            color: white;
-            height: 100%;
-            
-            
         }
         .skill{
-            margin: 100px;
-            
+            margin: 250px;
+            padding-bottom: 70px;
         }
         .work{
-            margin: 150px;
+            padding: 150px;
             color: dimgrey;
-            
-        
         }
         
         body:before{
-            
             height:100%;
              display:inline-block;
              vertical-align:middle;
@@ -85,7 +78,7 @@
             text-decoration: none;
         }
         a:visited{
-            color: #fff;
+            color: #757575;
         }
         a:active{
             text-decoration: none;
@@ -105,6 +98,26 @@
         .gr{
             margin-left: 40px;
         }
-        .p{
-            color: black;
+        .inner1,.inner2{
+            color: #000 !important;
         }
+        #myBtn {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 30px; 
+            z-index: 99; 
+            border: none; 
+            outline: none; 
+            background-color: rgb(45, 59, 119);
+            color: white;
+            cursor: pointer;
+            padding: 15px;
+            border-radius: 10px;
+            font-size: 18px; 
+          }
+          
+          #myBtn:hover {
+            background-color: #555; 
+          }
+        
