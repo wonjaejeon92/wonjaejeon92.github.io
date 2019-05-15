@@ -1,25 +1,43 @@
 $(document).ready(function(){
-
   $('.btn-1').click(function(){
-
-    var a = $('.skill');
-    var b = $('.work');
-    var c = $('.contact');
-    
-    if(a){
-      var offset = $(a).offset();
-    }
-    if(b){
-      var offset = $(b).offset();
-    }
-    if(c){
-      var offset = $(c).offset();
-    }
-    
-    
-    $('html,body').animate({scrollTop : offset.top }, 2000);
-
+    checkBtnId('.btn-1');
   });
+  $('.btn-2').click(function(){
+     checkBtnId('.btn-2');
+   });
+  $('.btn-3').click(function(){
+     checkBtnId('.btn-3');
+   });
+  $('.btn-4').click(function(){
+     checkBtnId('.btn-4');
+   });
+
+
+ function checkBtnId (id){
+    var getClassId = {};
+    var offset = {};
+   
+    if(".btn-1" == id){
+      getClassId = $('.main');
+      offset = getClassId.offset();
+    }
+    if(".btn-2" == id){
+       getClassId = $('.skill');
+       offset = getClassId.offset();
+    }
+    else if(".btn-3" == id){
+       getClassId = $('.work');
+       offset = getClassId.offset();
+    }
+    else if(".btn-4" == id){
+       getClassId = $('.contact');
+       offset = getClassId.offset();
+    }
+
+    $('html,body').animate({scrollTop : offset.top }, 2000);
+ 
+ 
+ }
 
 });
 
