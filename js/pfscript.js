@@ -33,6 +33,7 @@ $(document).ready(function(){
        getClassId = $('.contact');
        offset = getClassId.offset();
     }
+   console.log("offset : ",offset, "top : ",offset.top);
 
     $('html,body').animate({scrollTop : offset.top }, 2000);
  
