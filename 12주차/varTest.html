@@ -1,7 +1,7 @@
 <!doctype html>  <!-- varTest.html -->
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <script src="http://code.jquery.com/jquery=1.11.1.min.js"></script>
 <script src="../js/sample.js"></script>
@@ -21,7 +21,9 @@
 			var name="홍길동", age=21,flag=true, color=0xF00;
 			document.write("일반변수: "+" 이름="+name+",나이 = "+age+",나이>20="+flag+",색깔="+color+"<br/>");
 			function MyClass(){
-				this.name = "홍길동";this.age=21;this.flag=true;
+				this.name = "홍길동";
+				this.age=21;
+				this.flag=true;
 				this.nextAge=function(a,b){
 					document.write(b+"년 후 나이는 "+(a+b)+"입니다"+"<br/>");
 				}
