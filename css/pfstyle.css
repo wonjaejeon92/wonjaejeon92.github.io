@@ -3,10 +3,10 @@
             background-color: gainsboro;
         }
         #first {
-            margin: 100px;
-            padding: 50px;
-            padding-bottom: 600px;
-            font-size: 50px;
+            margin: 1.7em;
+            padding: 1em;
+            padding-bottom: 7em;
+            font-size: 4em;
             text-align: center;
             color: white;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -31,25 +31,26 @@
         }
        
         .main{           
-            background: url(../Images/desk.PNG) no-repeat center center fixed; 
+            background: url(../포폴/desk.PNG) no-repeat center center fixed; 
             background-size: cover;
         }
         .skill{
-            background-image: url(../Images/tex.png);
+            background-image: url(../포폴/tex.png);
             background-size: cover;
             position: relative; 
             padding: 10%;
-            padding-bottom: 150px;
+            padding-bottom: 9.4em;
         }
         .work{
-            padding: 150px;
+            margin: 6em;
+            padding: 7em;
             color: dimgrey;
         }
         .contact{
-            margin: 50px;
-            padding: 50px;
+            margin: 4em;
+            padding: 5em;
             text-align: center;
-            padding-bottom: 400px;
+            padding-bottom: 20em;
 
         }
         
@@ -63,9 +64,9 @@
              color:#fff;
              border:none;
              position:relative;
-             height:60px;
-             width: 150px;
-             font-size:1em;
+             height:4.5em;
+             width: 11em;
+             font-size:1.1em;
              padding:0 2em;
              cursor:pointer;
              transition:800ms ease all;
@@ -169,5 +170,4 @@
               opacity: 1;
             }
           }
-
           @media only screen and(max-width:768px){[class*="col-"]{width:100%}}
