@@ -3,9 +3,10 @@
             background-color: gainsboro;
         }
         #first {
-            margin: 1.7em;
+            margin: 1.2em;
             padding: 1em;
-            padding-bottom: 7em;
+            padding-bottom: 10em;
+            margin-top: 0;
             font-size: 4em;
             text-align: center;
             color: white;
@@ -34,6 +35,51 @@
             background: url(../Images/desk.PNG) no-repeat center center fixed; 
             background-size: cover;
         }
+        .about{
+            text-align: center;
+            padding: 6em;
+            margin: 5em;
+            padding-top: 0;
+            padding-bottom: 50%;
+        }
+        #education{
+            background-color: lightgray;
+            float: left;
+            padding: 3em;
+            margin: 4em;
+            padding-bottom: -40%;
+            
+        }
+        #course{
+            background-color: lightgray;
+            float: right;
+            margin: 4em;
+            margin-right: 10%;
+            padding: 14%;
+            padding-top: 4%;
+        }
+        #competition{
+            background-color: lightgray;
+            float: left;
+            margin: 5em;
+            padding: 3em;
+            margin-top: -1.5em;
+            margin-right: -4em;
+
+        }
+        #left{
+            position: relative;
+            right: 90%;
+            top: 20px;
+        }
+        #right{
+            
+            position: relative;
+            left: 90%;
+            top: -300px;
+            
+        }
+        
         .skill{
             background-image: url(../Images/tex.png);
             background-size: cover;
@@ -65,7 +111,7 @@
              color:#fff;
              border:none;
              position:relative;
-             height:4.5em;
+             height:4em;
              width: 7em;
              font-size:0.9em;
              padding:0 2em;
@@ -171,4 +217,60 @@
               opacity: 1;
             }
           }
-          @media only screen and(max-width:768px){[class*="col-"]{width:100%}}
+          @media screen and (max-width: 768px){
+        .side-collapse-container{
+            width:100%;
+            position:relative;
+            left:0;
+            transition:left .4s;
+        }
+        .side-collapse-container.out{
+            left:200px;
+        }
+        .side-collapse {
+            top:50px;
+            bottom:0;
+            left:0;
+            width:200px;
+            position:fixed;
+            overflow:hidden;
+            transition:width .4s;
+        }
+        .side-collapse.in {
+            width:0;
+        }
+        .navbar-nav{
+            flex-direction: column !important;
+        }
+        .navbar-toggle {
+            display: block !important;
+        }
+    }
+
+        .navbar-nav{
+            flex-direction: row;
+        }
+        pre {
+            tab-size: 8;
+        }
+        .menu{
+            padding: 1.5em;
+        }
+        .carousel-indicators .active{
+            opacity: 0.6;
+        }
+        .carousel-indicators li{
+            width: 10px;
+            padding: 10px;
+        }
+        .navbar-toggle {
+            display: none;
+        }
+        #map-canvas{
+            float: left;
+            height: 20em;
+            width: 75em;
+            margin: 5%;
+            padding: 5%;
+        }
+        
