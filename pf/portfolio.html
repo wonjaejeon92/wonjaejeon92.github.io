@@ -4,91 +4,153 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>전원재의 포트폴리오</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <link rel="stylesheet" href="../css/pfstyle.css">
     <script type="text/javascript" src="../js/pfscript.js"></script>
-    
 </head>
 <body>    
+  
   <div class="container-custom">
-    <div class="main">
-        <div class="btn-group" role="group" aria-label="Basic example">
-                <button type="button" class="btn-1">Home</button>
-                <button type="button" class="btn-2">Skill</button>
-                <button type="button" class="btn-3">Work</button>
-                <button type="button" class="btn-4">Contact</button>
-        </div>
-       
+    <div class="main" id="home">
+        <header role="banner" class="navbar navbar-fixed-top navbar-inverse">
+            <button data-toggle="collapse-side" data-target=".side-collapse" data-target-2=".side-collapse-container" type="button" class="navbar-toggle pull-left">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span></button>
+          <div class="navbar-inverse side-collapse in">
+            <nav role="navigation" class="navbar-collapse">
+              <ul class="nav navbar-nav">
+                <li class="menu"><a href="#home">Home</a></li>
+                <li class="menu"><a href="#ab">About</a></li>
+                <li class="menu"><a href="#sk">Skill</a></li>
+                <li class="menu"><a href="#wo">Work</a></li>
+                <li class="menu"><a href="#Con">Contact</a></li>
+                
+              </ul>
+            </nav>
+          </div>
+         
+    </header>
+    <div class="container side-collapse-container">
         <p id="first">
             I am Jeon Won-Jae
         </p>
-      
+      </div>
     </div>
-    
-
 
   <section>
-    <div class="skill">
+    <div class="about" id="ab">
+      <h1>About</h1>
+      <div id="education">
+        <h4>학력</h4>
+          <p>
+            2007년 파주 문산중학교 졸업<br>
+            2010년 파주 문산제일고등학교 졸업<br>
+            2011년 ~ 현재 대전대학교 재학중
+          </p>
+        </div>
+        <div id="course">
+          <h4>수업 수강내역</h4>
+          <p id="left">
+            자료구조<br>
+            알고리즘<br>
+            오토마타<br>
+            모바일 프로그래밍<br>
+            인터넷 프로그래밍<br>
+            웹 서버 프로그래밍<br>
+            소프트웨어 공학<br>
+            공학설계<br>
+            C언어<br>
+            C++<br>
+            MFC<br>
+            디지털 논리회로<br>
+            임베디드 소프트웨어
+          </p>
+          <p id="right">
+            C#<br>
+            운영체제<br>
+            컴퓨터구조<br>
+            네트워크와 데이터통신<br>
+            인공지능<br>
+            데이터베이스<br>
+            리눅스<br>
+            컴퓨터 통신보안<br>
+            네트워크 프로그래밍<br>
+            캡스톤 디자인<br>
+            시스템 분석 및 설계
+          </p>
+        </div>
+        <div id="competition">
+            <h4>공모전</h4>
+            <img src="../Images/iot.PNG" alt="iot.PNG" width="230px" height="320px">
+          </div>
+      </div>
+  </section>
+
+  <section>
+    <div class="skill" id="sk">
         <h1>Skill</h1>
     <hr>
         
         <dt>
             <dd>C</dd>
                 <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="max-width: 15%;" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"><span class="title">15%</span></div>
+                    <div class="progress-bar" role="progressbar" style="max-width: 35%;" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100"><span class="title">35%</span></div>
                 </div>
                 
             <dd>Java</dd>
                 <div class="progress">
-                        <div class="progress-bar" role="progressbar" style="max-width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"><span class="title">60%</span></div>
+                        <div class="progress-bar" role="progressbar" style="max-width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"><span class="title">80%</span></div>
                     </div>
                
             <dd>C#</dd>
                 <div class="progress">
-                        <div class="progress-bar" role="progressbar" style="max-width: 30%;" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"><span class="title">30%</span></div>
+                        <div class="progress-bar" role="progressbar" style="max-width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"><span class="title">50%</span></div>
                     </div>
                 
             <dd>C++</dd>
                 <div class="progress">
-                        <div class="progress-bar" role="progressbar" style="max-width: 20%;" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"><span class="title">20%</span></div>
+                        <div class="progress-bar" role="progressbar" style="max-width: 40%;" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"><span class="title">40%</span></div>
                     </div>
                 
             <dd>Mysql</dd>
                 <div class="progress">
-                        <div class="progress-bar" role="progressbar" style="max-width: 30%;" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"><span class="title">30%</span></div>
+                        <div class="progress-bar" role="progressbar" style="max-width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"><span class="title">50%</span></div>
                     </div>
                
             <dd>Css</dd>
                 <div class="progress">
-                        <div class="progress-bar" role="progressbar" style="max-width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"><span class="title">50%</span></div>
+                        <div class="progress-bar" role="progressbar" style="max-width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"><span class="title">70%</span></div>
                     </div>
                 
             <dd>Html</dd>
                 <div class="progress">
-                        <div class="progress-bar" role="progressbar" style="max-width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"><span class="title">60%</span></div>
+                        <div class="progress-bar" role="progressbar" style="max-width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"><span class="title">80%</span></div>
                     </div>
                 
             <dd>Javascript</dd>
                 <div class="progress">
-                        <div class="progress-bar" role="progressbar" style="max-width: 30%;" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"><span class="title">30%</span></div>
+                        <div class="progress-bar" role="progressbar" style="max-width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"><span class="title">50%</span></div>
                     </div>
                 
-            <dd>Node js</dd>
+            <dd>Node.js</dd>
                 <div class="progress">
-                        <div class="progress-bar" role="progressbar" style="max-width: 20%;" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"><span class="title">20%</span></div>
+                        <div class="progress-bar" role="progressbar" style="max-width: 40%;" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"><span class="title">40%</span></div>
                     </div>
                
             <dd>Android</dd>
                 <div class="progress">
-                        <div class="progress-bar" role="progressbar" style="max-width: 30%;" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"><span class="title">30%</span></div>
+                        <div class="progress-bar" role="progressbar" style="max-width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"><span class="title">50%</span></div>
                     </div>
                
             <dd>Jsp</dd>
                 <div class="progress">
-                        <div class="progress-bar" role="progressbar" style="max-width: 40%;" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"><span class="title">40%</span></div>
+                        <div class="progress-bar" role="progressbar" style="max-width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"><span class="title">60%</span></div>
                     </div>
                 
             </dt>
@@ -96,7 +158,7 @@
 </section>
 
 <section>
-    <div class="work">
+    <div class="work" id="wo">
         <h1>Work</h1>
             <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
               <ol class="carousel-indicators">
@@ -140,7 +202,7 @@
         </section>
 
         <section>
-            <div class="contact">
+            <div class="contact" id="Con">
                 <h1>Contact</h1>
 
                 <img src="../Images/facebook.png" alt="facebook" width="100px" height="100px;" usemap="#face">
@@ -155,6 +217,8 @@
                 <map id="inst" name="inst">
                   <area shape="rect" coords="0,0,640,640" alt="fecebook" target="_blank" href="https://www.instagram.com/wonjae_0126/">
                 </map>
+                
+                <div id="map-canvas"></div>
             </div>
         </section>
         <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
