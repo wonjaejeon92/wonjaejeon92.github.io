@@ -1,16 +1,18 @@
 
         body{
-            background-color: gainsboro;
+            background-color: rgb(22, 22, 22);
         }
         #first {
             margin: 1.2em;
+            margin-left: 0em;
+            margin-right: 0em;
             padding: 1em;
             padding-bottom: 10em;
             margin-top: 0;
             font-size: 4em;
             text-align: center;
             color: white;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-family: 'Love Ya Like A Sister', cursive;
             animation: text 3s 1;
         }
         @keyframes text{
@@ -26,8 +28,8 @@
         }
         h1{
             text-align: center;
-            color: #000000;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: #93f0f0;
+            font-family: 'Love Ya Like A Sister', cursive;
             font: bold;
         }
        
@@ -36,66 +38,37 @@
             background-size: cover;
         }
         .about{
+            line-height: 2.2em;
+            font-size: 2.3em;
+            color: #d4eeff;
+            font-family: 'Gaegu', cursive;
             text-align: center;
-            padding: 6em;
-            margin: 5em;
-            padding-top: 0;
-            padding-bottom: 50%;
-        }
-        #education{
-            background-color: lightgray;
-            float: left;
-            padding: 3em;
-            margin: 4em;
-            padding-bottom: -40%;
-            
-        }
-        #course{
-            background-color: lightgray;
-            float: right;
-            margin: 4em;
-            margin-right: 10%;
-            padding: 14%;
-            padding-top: 4%;
-        }
-        #competition{
-            background-color: lightgray;
-            float: left;
-            margin: 5em;
-            padding: 3em;
-            margin-top: -1.5em;
-            margin-right: -4em;
-
-        }
-        #left{
-            position: relative;
-            right: 90%;
-            top: 20px;
-        }
-        #right{
-            
-            position: relative;
-            left: 90%;
-            top: -300px;
-            
-        }
-        
-        .skill{
-            background-image: url(../Images/tex.png);
-            background-size: cover;
             position: relative; 
-            padding: 10%;
+            padding: 1em;
+            margin: 1em;
+        }
+        .skill{
+            background-image: url(../Images/text.jpg);
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            float: center;
+            color: #d4eeff;
+            padding: 9em;
             padding-bottom: 9.4em;
         }
         .work{
             margin: 4em;
             padding: 4em;
             padding-bottom: 15em;
+            position: relative; 
+            float: center;
             color: dimgrey;
         }
         .contact{
             margin: 4em;
             padding: 5em;
+            float: center;
             text-align: center;
             padding-bottom: 20em;
 
