@@ -74,6 +74,9 @@
             float: center;
             text-align: center;
         }
+        .ic{
+            margin: 1em;
+        }
         .flip{
             position: relative;
             display: inline-block;
