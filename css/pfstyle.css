@@ -1,16 +1,27 @@
 
-        body{
+        html,body{
+            margin: 0;
+            padding: 0;
+            height: 100%;
             background-color: rgb(22, 22, 22);
         }
+        span{
+            display: inline-block;
+        }
+        html{
+            border: 0px solid #000000;
+            -moz-box-sizing: border-box; /* Firefox  */
+            -webkit-box-sizing: border-box; /* Safari */
+            box-sizing: border-box; /* CSS3 Standard */
+        }
         #first {
-            margin: 1.2em;
-            margin-left: 0em;
-            margin-right: 0em;
-            padding: 1em;
-            padding-bottom: 10em;
-            margin-top: 0;
+            margin: 0em;
+            margin-top: 1.5em;
+            padding: 2em;
+            padding-bottom: 11em;
             font-size: 4em;
             text-align: center;
+            line-height: 2em;
             color: white;
             font-family: 'Love Ya Like A Sister', cursive;
             animation: text 3s 1;
@@ -26,60 +37,106 @@
                 letter-spacing: 3px;
             }
         }
-        h1{
+        h1.label{
             text-align: center;
-            color: #93f0f0;
-            font-family: 'Love Ya Like A Sister', cursive;
+            color: #7e8d8d;
+            font-family: Verdana;
             font: bold;
+            font-size: 400%;
+            display: block;
         }
        
-        .main{           
+        .main{      
+            padding: 0;
+            min-height: 100%;
             background: url(../Images/desk.PNG) no-repeat center center fixed; 
             background-size: cover;
         }
         .about{
-            line-height: 2.2em;
-            font-size: 2.3em;
-            color: #d4eeff;
-            font-family: 'Gaegu', cursive;
+            box-sizing: border-box;
+            color: oldlace;
+            font-family: 'Sunflower', sans-serif;
             text-align: center;
-            position: relative; 
-            padding: 1em;
-            margin: 1em;
+        }
+        .typing{
+            font-size: 2em;
+            line-height: 1.95em;
         }
         .skill{
-            background-image: url(../Images/text.jpg);
-            background-size: cover;
-            background-position: center;
-            position: relative;
-            float: center;
-            color: #d4eeff;
-            padding: 9em;
-            padding-bottom: 9.4em;
+            color: #555;
+            text-align: center;
+            background: #222;
+            padding: 1em;
         }
         .work{
-            margin: 4em;
-            padding: 4em;
-            padding-bottom: 15em;
-            position: relative; 
-            float: center;
-            color: dimgrey;
-        }
-        .contact{
-            margin: 4em;
-            padding: 5em;
+            width: 100%;
+            position: relative;
             float: center;
             text-align: center;
-            padding-bottom: 20em;
-
         }
-        
+        .flip{
+            position: relative;
+            display: inline-block;
+            margin: 2em;
+            margin-bottom: 1em;
+            width: 120px;
+        }
+        .flip > .front,.back{
+            display: block;
+            transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            transition-duration: .5s;
+            transition-property: transform, opacity;
+            color: white;
+            width: inherit;
+            background-size: cover!important;
+            background-position: center!important;
+            height: 120px;
+            padding: 1em 2em;
+            background: #313131;
+            border-radius: 10px;
+        }
+        .flip > .front{
+            transform: rotateY(0deg);
+        }
+        .flip > .back{
+            position: absolute;
+            opacity: 0;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            height: 100%;
+            transform: rotateY(-180deg);
+        }
+        :hover > .front{
+            transform: rotateY(180deg);
+        }
+        :hover > .back{
+            opacity: 1;
+            transform: rotateY(0deg);
+        }
+        .inside{
+            margin-top: 50%;
+            font-size: 1em;
+            color: #999;
+            text-align: center;
+        }
+        .contact{
+            float: center;
+            text-align: center;
+            padding: 7em;
+            background: #222;
+        }
+        .mail{
+            font-size: 2.4em;
+            color: oldlace;
+            font-family: 'Love Ya Like A Sister', cursive;
+        }
         body:before{
             height:100%;
              display:inline-block;
              vertical-align:middle;
         }
-        button{
+        .contact > button{
             background:#000000;
              color:#fff;
              border:none;
@@ -93,11 +150,11 @@
              outline:none;
              font-family: Verdana, Geneva, Tahoma, sans-serif;
         }
-        button:hover{
+        .contact > button:hover{
             background:#fff;
              color:#000000;
         }
-        button:before,button:after{
+        .contact > button:before,button:after{
             content:'';
             position:absolute;
             top:0;
@@ -107,13 +164,13 @@
             background: #757575;
             transition:400ms ease all;
         }
-        button:after{
+        .contact > button:after{
             right:inherit;
             top:inherit;
             left:0;
             bottom:0;
         }
-        button:hover:before,button:hover:after{
+        .contact > button:hover:before,button:hover:after{
             width:100%;
             transition:800ms ease all;
         }
@@ -142,9 +199,6 @@
         .gr{
             margin-left: 40px;
         }
-        .inner1,.inner2{
-            color: #000 !important;
-        }
         #myBtn {
             display: none;
             position: fixed;
@@ -172,8 +226,6 @@
               opacity: 0;
               animation: show 0.35s forwards ease-in-out 0.5s;
             }
-          
-          
           @keyframes progress {
             from {
               width: 0;
@@ -227,23 +279,58 @@
             tab-size: 8;
         }
         .menu{
-            padding: 1.5em;
-        }
-        .carousel-indicators .active{
-            opacity: 0.6;
-        }
-        .carousel-indicators li{
-            width: 10px;
-            padding: 10px;
+            padding-left: 1.5em;
+            padding-right: 1.5em;
         }
         .navbar-toggle {
             display: none;
         }
-        #map-canvas{
-            float: left;
-            height: 20em;
-            width: 75em;
-            margin: 5%;
-            padding: 5%;
+        .navbar-inverse{
+            background-color: black;
+        }
+        
+        .btn.btn-latest{
+            background-color:transparent;
+            border-style:solid;
+            border-color:#462A51;
+            color:#462A51;
+            border-radius:0;
+            margin:5px;
+        }
+        
+        .btn.btn-latest:hover{
+            background-color:#462A51;
+            color:#fff;
+            border-radius:0;
+            margin:5px;
+        }
+        
+        .btn.btn-heart{
+            background-color:transparent;
+            border-style:solid;
+            border-color:#462A51;
+            color:#462A51;
+            border-radius:0;
+            margin:5px;
+        }
+        
+        .btn.btn-heart.active{
+            background-color:#462A51;
+            color:#fff;
+            border-radius:0;
+            margin:5px;
+        }
+        
+        .fa.fa-heart{
+          color:#c79dd7;
+        }
+        
+        #right-bar{
+          color:#fff;
+        }
+        
+        .img:hover {
+            -webkit-animation: pulse 1s;
+            animation: pulse 1s;
         }
         
