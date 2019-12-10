@@ -26,6 +26,20 @@
             font-family: 'Love Ya Like A Sister', cursive;
             animation: text 3s 1;
         }
+        @media screen and (max-width: 768px){
+            #first {
+                margin: 0em;
+                margin-top: 1.5em;
+                padding: 2em;
+                padding-bottom: 11em;
+                font-size: 1.5em;
+                text-align: center;
+                line-height: 2em;
+                color: white;
+                font-family: 'Love Ya Like A Sister', cursive;
+                animation: text 3s 1;
+            }
+        }
         @keyframes text{
             0%{
                 color: black;
