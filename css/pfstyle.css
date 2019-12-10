@@ -134,6 +134,13 @@
             color: oldlace;
             font-family: 'Love Ya Like A Sister', cursive;
         }
+        @media screen and (max-width: 768px){
+            .mail{
+                font-size: 1.2em;
+                color: oldlace;
+                font-family: 'Love Ya Like A Sister', cursive;
+            }
+        }
         body:before{
             height:100%;
              display:inline-block;
