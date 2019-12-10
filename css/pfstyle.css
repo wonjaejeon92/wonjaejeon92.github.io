@@ -155,6 +155,12 @@
             font-family: 'Love Ya Like A Sister', cursive;
         }
         @media screen and (max-width: 768px){
+            .contact{
+                padding: 3em;
+                float: center;
+                text-align: center;
+                background: #222;
+            }
             .mail{
                 font-size: 1.2em;
                 color: oldlace;
