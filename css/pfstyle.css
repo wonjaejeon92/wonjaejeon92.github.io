@@ -157,6 +157,7 @@
         @media screen and (max-width: 768px){
             .contact{
                 padding: 3em;
+                margin: 1.5em;
                 float: center;
                 text-align: center;
                 background: #222;
