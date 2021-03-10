@@ -50,17 +50,18 @@
   <section>
     <div class="about" id="ab">
           <h1 class="label">『About』</h1>
-          <div class="face">
-            <img class="face-inbx" src="../Images/전원재.jpg" alt="전원재">
-          </div>
-          <span class="typing">
-          안녕하세요!<br/>
-          웹프로그래머 전원재입니다.<br/>
-          저의 포트폴리오 공간에 방문에 주셔서 감사합니다.<br/>
-          저는 2020년 2월에 대전대학교를 학사졸업했고, 2019년 12월에 취직하여 2021년 2월 퇴사하기전까지<br/>
-          티티엠소프트라는 업체에서 e-commerce 웹페이지를 React.js를 이용해 제작하였습니다.<br/>
-          저의 목표는 구글처럼 많은 사람들이 이용할 수 있는 웹페이지를 만드는 것입니다.
-        </span>
+          <div class="content-box">
+            <div class="face">
+              <img class="face-inbx" src="../Images/전원재.jpg" alt="전원재">
+            </div>
+            <span class="typing">
+            안녕하세요!<br/>
+            웹프로그래머 전원재입니다.<br/>
+            저의 포트폴리오 공간에 방문에 주셔서 감사합니다.<br/>
+            저는 2020년 2월에 대전대학교를 학사졸업했고, 2019년 12월에 취직하여 2021년 2월 퇴사하였습니다.<br/>
+            저의 목표는 구글처럼 많은 사람들이 이용할 수 있는 웹페이지를 만드는 것입니다.
+          </span>
+        </div>
       </div>
   </section>
 
@@ -156,88 +157,176 @@
     <div class="work" id="wo">
       <h1 class="label">『Works』</h1>
       <div class="container" id="menu">
-          <div class="row">
-              <div class="row">
-                <div class="col-md-4">
-                  <div class="panel panel-default">
-                    <div class="panel-body">
-                      <img src="https://wonjaejeon92.github.io/Images/mobile.png" class="img-responsive img-responsive infinite pulse" alt="Responsive image">
-                      <h3>교육용 모바일 코딩 게임</h3>
-                      <p>개발기간 : 2018.12 ~ 2019.10</p>
-                      <p>팀프로젝트</p>
-                      <p>사용자가 만든 프로그래밍을 사용자가 배치한 로봇과 연결하여 사과를 주워 적은 비용, 빠른시간, 적은 행동량을 사용하여 상자에 넣는 게임</p>
-                      <p>Stacks : #Java, #Android, #MySQL, #PHP</p>
-                      <dl>
-                          <p>맡은 부분<br>
-                              <dd>데이터베이스 : 사용자 정보를 Json형식으로 파싱해 보여주는 Profile화면, 대전모드시 대전 가능한 사용자 목록 가져오기<br></dd>
-                              <dd>Android : 메인메뉴, 인게임 로봇성능(움직이는 칸수, 물건드는 갯수)</p></dd></dl>
-                      <hr>
-                        <button type="button" class="btn btn-latest"><a href="https://github.com/wonjaejeon92/capstone" target="_blank">Move to Github</a></button>
-                    </div>
-                  </div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="panel panel-default">
+              <div class="panel-body">
+                <img src="https://wonjaejeon92.github.io/Images/mobile.png" class="img-responsive img-responsive infinite pulse" alt="Responsive image">
+                <h3 class="title">교육용 모바일 코딩 게임</h3>
+                <p>개발기간 : 2018.12 ~ 2019.10</p>
+                <p>사용자가 만든 프로그래밍을 사용자가 배치한 로봇과 연결하여 사과를 주워 적은 비용, 빠른시간, 적은 행동량을 사용하여 상자에 넣는 게임</p>
+                <p>Stacks : Java, Android, MySQL, PHP</p>
+                <hr/>
+                <h4><b>맡은 부분</b></h4>
+                <div Align="left">
+                  <ul>
+                    <p>
+                      <li>사용자 정보를 Json형식으로 파싱해 보여주는 Profile화면,</li>
+                      <li>대전모드시 대전 가능한 사용자 목록 가져오기,</li>
+                      <li>메인메뉴, 인게임 로봇성능(움직이는 칸수, 물건드는 갯수)</li>
+                    </p>
+                  </ul>
                 </div>
-                <div class="col-md-4">
-                  <div class="panel panel-default">
-                    <div class="panel-body">
-                      <img src="https://wonjaejeon92.github.io/Images/bingo.png" class="img-responsive infinite pulse" alt="Responsive image">
-                      <h3>빙고마블</h3>
-                      <p>개발기간 : 2018.04 ~ 2018.06</p>
-                      <p>팀프로젝트</p>
-                      <p>고전 게임인 부루마블을 기본으로 하여 빙고게임과 뱀 게임을 섞어만든 보드게임</p>
-                      <p>Stacks : #C#</p>
-                      <dl><p>맡은 부분<br>
-                          <dd>C#(WinForm) : 각 칸(Grid)의 정보를 정보창(ViewBox)에 표시, 특정 칸(Grid)에 멈추면 다른 칸(Grid)으로 이동하는 뱀 게임,</dd> 
-                          <dd>한 명의 사용자가 칸(Grid)의 한 줄 전부를 가져가면 이기는 빙고기능</p></dd></dl>
-                      <hr>
-                      <button type="button" class="btn btn-latest"><a href="https://github.com/wonjaejeon92/BingoMarble" target="_blank">Move to Github</a></button>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="panel panel-default">
-                      <div class="panel-body">
-                        <img src="https://wonjaejeon92.github.io/Images/port.JPG" class="img-responsive infinite pulse" alt="Responsive image">
-                        <h3>포트폴리오</h3>
-                        <p>개발기간 : 2019.05 ~ 2019.12</p>
-                        <p>개인프로젝트</p>
-                        <p>'전원재'에 대한 Skills, Project를 보여주는 Web</p>
-                        <p>Stacks : #Html, #Css, #JavaScript, #Bootstrap, #jQuery</p>
-                        <dl><p>맡은 부분<br>
-                            <dd>CSS : Home부분 Text Animation 등 기본<br></dd>
-                            <dd>jQuery : Skill부분 Flip 효과</dd>
-                            <dd>JavaScript : Scroll Function 사용하여 최상단으로 이동하는 TOP 버튼</dd>
-                            <dd>Bootstrap : 상단의 Navigation Bar, Work부분 ImageCards</p></dd></dl>
-                        <hr>
-                        <button type="button"  class="btn btn-latest"><a href="https://github.com/wonjaejeon92/wonjaejeon92.github.io" target="_blank">Move to Github</a></button>
-                      </div>
-                    </div>
-                  </div>
+                <hr>
+                  <button type="button" class="btn btn-latest"><a href="https://github.com/wonjaejeon92/capstone" target="_blank">Move to Github</a></button>
               </div>
             </div>
           </div>
+          <div class="col-md-4">
+            <div class="panel panel-default">
+              <div class="panel-body">
+                <img src="https://wonjaejeon92.github.io/Images/bingo.png" class="img-responsive infinite pulse" alt="Responsive image">
+                <h3 class="title">빙고마블</h3>
+                <p>개발기간 : 2018.04 ~ 2018.06</p>
+                <p>고전 게임인 부루마블을 기본으로 하여 빙고게임과 뱀 게임을 섞어만든 보드게임</p>
+                <p>Stacks : C#</p>
+                <hr/>
+                <h4><b>맡은 부분</b></h4>
+                <div Align="left">
+                  <ul>
+                    <p>
+                      <li>WinForm으로 제작,</li>
+                      <li>각 칸(Grid)의 정보를 정보창(ViewBox)에 표시,</li>
+                      <li>특정 칸(Grid)에 멈추면 다른 칸(Grid)으로 이동하는 뱀 게임,</li> 
+                      <li>한 명의 사용자가 칸(Grid)의 한 줄 전부를 가져가면 이기는 빙고기능</li>
+                    </p>
+                  </ul>
+                </div>
+                <hr>
+                <button type="button" class="btn btn-latest"><a href="https://github.com/wonjaejeon92/BingoMarble" target="_blank">Move to Github</a></button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+              <div class="panel panel-default">
+                <div class="panel-body">
+                  <img src="https://wonjaejeon92.github.io/Images/port.JPG" class="img-responsive infinite pulse" alt="Responsive image">
+                  <h3 class="title">포트폴리오</h3>
+                  <p>개발기간 : 2019.05 ~ 2019.12</p>
+                  <p>'전원재'에 대한 Skills, Project를 보여주는 Web</p>
+                  <p>Stacks : Html, Css, JavaScript, Bootstrap, jQuery</p>
+                  <hr/>
+                  <h4><b>맡은 부분</b></h4>
+                  <div Align="left">
+                    <ul>
+                      <p>
+                        <li>Home화면 Text Animation 등의 Css,<br></li>
+                        <li>Skill부분 Flip 효과,</li>
+                        <li>Scroll Function 사용하여 최상단으로 이동하는 TOP 버튼,</li>
+                        <li>상단의 Navigation Bar, Work부분 ImageCards</li>
+                      </p>
+                    </ul>
+                  </div>
+                  <hr>
+                  <button type="button"  class="btn btn-latest"><a href="https://github.com/wonjaejeon92/wonjaejeon92.github.io" target="_blank">Move to Github</a></button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="panel panel-default">
+                <div class="panel-body">
+                  <img src="https://wonjaejeon92.github.io/Images/조회화면.png" class="img-responsive infinite pulse" alt="Responsive image">
+                  <h3 class="title">마켓플레이스</h3>
+                  <p>개발기간 : 2020.01 ~ 2020.12</p>
+                  <p>비공개 프로젝트1</p>
+                  <p>Stacks : ReactJS, Spring FrameWork, jpa, blockChain, redis, docker, postgreSQL, git</p>
+                  <hr/>
+                  <h4><b>맡은 부분</b></h4>
+                  <div Align="left">
+                    <ul>
+                      <p>
+                        <li>4개월간의 기획참여,<br></li>
+                        <li>ReactJS를 이용한 화면 개발,</li>
+                        <li>RestAPI를 이용한 데이터 통신,</li>
+                        <li>Spring의 JPA를 이용한 MVC패턴으로 controller,servicer등 개발</li>
+                      </p>
+                    </ul>
+                  </div>
+                  <hr>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="panel panel-default">
+                <div class="panel-body">
+                  <img src="https://wonjaejeon92.github.io/Images/조회화면.png" class="img-responsive infinite pulse" alt="Responsive image">
+                  <h3 class="title">M&S</h3>
+                  <p>개발기간 : 2020.01 ~ 2020.12</p>
+                  <p>비공개 프로젝트2</p>
+                  <p>Stacks : ReactJS, Spring FrameWork, jpa, blockChain, redis, docker, postgreSQL, git</p>
+                  <hr/>
+                  <h4><b>맡은 부분</b></h4>
+                  <div Align="left">
+                    <ul>
+                      <p>
+                        <li>4개월간의 기획참여,<br></li>
+                        <li>ReactJS를 이용한 화면 개발,</li>
+                        <li>RestAPI를 이용한 데이터 통신,</li>
+                        <li>Spring의 JPA를 이용한 MVC패턴으로 controller,servicer등 개발</li>
+                      </p>
+                    </ul>
+                  </div>
+                  <hr>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="panel panel-default">
+                <div class="panel-body">
+                  <img src="https://wonjaejeon92.github.io/Images/조회화면.png" class="img-responsive infinite pulse" alt="Responsive image">
+                  <h3 class="title">인플루언서 플랫폼</h3>
+                  <p>개발기간 : 2020.12 ~ 2021.02</p>
+                  <p>비공개 프로젝트3</p>
+                  <p>Stacks : ReactJS, Spring FrameWork, jpa, redis, mariaDB, git</p>
+                  <hr/>
+                  <h4><b>맡은 부분</b></h4>
+                  <div Align="left">
+                    <ul>
+                      <p>
+                        <li>ReactJS를 이용한 화면 개발,</li>
+                        <li>RestAPI를 이용한 데이터 통신,</li>
+                        <li>Spring의 JPA를 이용한 MVC패턴으로 controller,servicer등 개발</li>
+                      </p>
+                    </ul>
+                  </div>
+                  <hr>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
-        <section>
-            <div class="contact" id="Con">
-                <h1 class="label">『Contact』</h1><br>
-
-                <img src="../Images/facebook.png" class ="ic" alt="facebook" width="100px" height="100px;" usemap="#face">
-                <map id="face" name="face">
-                  <area shape="rect" coords="0,0,640,640" alt="fecebook" target="_blank" href="https://www.facebook.com/profile.php?id=100002056330758">
-                </map>
-                <img src="../Images/github.png" class ="ic" alt="github" width="100px" height="100px;" usemap="#git">
-                <map id="git" name="git">
-                  <area shape="rect" coords="0,0,640,640" alt="fecebook" target="_blank" href="https://github.com/wonjaejeon92">
-                </map>
-                <img src="../Images/instagram.png" class ="ic" alt="instagram" width="100px" height="100px;" usemap="#inst">
-                <map id="inst" name="inst">
-                  <area shape="rect" coords="0,0,640,640" alt="fecebook" target="_blank" href="https://www.instagram.com/wonjae_0126/">
-                </map><br><br>
-                <p class="mail"> Gmail : wonjaejeon92@gmail.com </p>
-            </div>
-        </section>
-        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <section>
+      <div class="contact" id="Con">
+          <h1 class="label">『Contact』</h1><br>
+          <img src="../Images/facebook.png" class ="ic" alt="facebook" width="100px" height="100px;" usemap="#face">
+          <map id="face" name="face">
+            <area shape="rect" coords="0,0,640,640" alt="fecebook" target="_blank" href="https://www.facebook.com/profile.php?id=100002056330758">
+          </map>
+          <img src="../Images/github.png" class ="ic" alt="github" width="100px" height="100px;" usemap="#git">
+          <map id="git" name="git">
+            <area shape="rect" coords="0,0,640,640" alt="fecebook" target="_blank" href="https://github.com/wonjaejeon92">
+          </map>
+          <img src="../Images/instagram.png" class ="ic" alt="instagram" width="100px" height="100px;" usemap="#inst">
+          <map id="inst" name="inst">
+            <area shape="rect" coords="0,0,640,640" alt="fecebook" target="_blank" href="https://www.instagram.com/wonjae_0126/">
+          </map><br><br>
+          <p class="mail"> Gmail : wonjaejeon92@gmail.com </p>
         </div>
-</body>
+      </section>
+      <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    </div>
+  </body>
 </html>
